@@ -19,8 +19,8 @@ Please record all details below, except the keys in the secret scope (you just n
     2. applicationId
     3. keyValue
     
-![This is an image](./images/secret_acl_a.png)
+![This is an image](./images/secret_acls_a.png)
 
 
 
-<img src="./images/secret_acl_a.png" />
+<img src="./images/secret_acls_a.png" />
