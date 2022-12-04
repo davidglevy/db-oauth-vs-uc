@@ -21,4 +21,6 @@ Please record all details below, except the keys in the secret scope (you just n
     
 ![This is an image](./images/secret_acl_a.png)
 
+
+
 <img src="./images/secret_acl_a.png" />
