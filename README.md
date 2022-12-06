@@ -18,9 +18,26 @@ Please record all details below, except the keys in the secret scope (you just n
     1. directoryId
     2. applicationId
     3. keyValue
-    
+
+The following shows the commands to run to set up and insert keys into a scope named, "oauth-demo"
 ![This is an image](./images/secret_acls_a.png)
 
+### Important: OAuth User access is managed via ACLs to the secret scope
 
+Users who are granted READ access, such as granting it to my colleague below, provide this as a mechanism to access via the app registration.
 
-<img src="./images/secret_acls_a.png" />
+<img src="./images/secret_acls_b.png" />
+
+### Unity Catalog Requirements
+
+For Unity Catalog Access, we require the following.
+
+1. A Managed Identity
+
+Create a managed identity: Follow the steps here: https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/azure-managed-identities
+
+2. A Unity Catalog Enabled Workspace
+
+Unity Catalog should be the base for any new workspaces. The key step is to assign a metastore to the workspace.
+
+3. Add the Managed Identity to the Workskpace
